@@ -64,11 +64,33 @@
             font-size: 14px;
             margin-right: 10px;
             cursor: pointer;
+            background-color: #6CD2EA;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #5BB7D9;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        ul li:hover {
+            color: #6CD2EA;
         }
     </style>
 </head>
 
 <body>
+    <br>
+    <br>
     <table class="container">
         <tr>
             <td class="left">
@@ -120,14 +142,19 @@
             </td>
         </tr>
     </table>
+    <br>
+    <br>
+    <hr>
+
+    <ul id="usersName">
+
+    </ul>
+
     <div class="buttons">
         <button onclick="previousPerson()">Previous</button>
         <button onclick="nextPerson()">Next</button>
     </div>
 
-    <ul id="usersName">
-
-    </ul>
 
     <script>
         const data = [
