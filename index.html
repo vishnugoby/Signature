@@ -102,7 +102,7 @@
                 <p id="job" class="job">Concepteur et développeur d'application</p>
                 <br>
                 <table class="info">
-                    <tr>
+                    <tr id="phoneColumn">
                         <td style="padding-right: 10px;">
                             <img src="https://vishnugoby.github.io/Signature/images/tel.svg" alt="phone">
                         </td>
@@ -216,11 +216,11 @@
             {
                 name: "COULIBALY Djibril",
                 job: "Chargé d’Affaires CVC",
-                phone: "0635793539",
+                phone: "",
                 email: "c.djibril@riva-group.fr",
                 address: "27 Boulevard Louise Michel, 92230 Gennevilliers",
                 website: "riva-group.fr",
-                phoneLink: "tel:+33635793539",
+                phoneLink: "",
             },
             {
                 name: "BACHARI Yahia",
@@ -270,7 +270,7 @@
                 phoneLink: "tel:+33615625351",
             },
             {
-                name: "ANTHONY Duc",
+                name: "DUC Anthony",
                 job: "",
                 phone: "01 72 42 77 69",
                 email: "a.duc@riva-group.fr",
@@ -316,6 +316,8 @@
 
         let currentIndex = 0;
 
+
+
         function updateProfile(index) {
             const profile = data[index];
             document.getElementById('name').textContent = profile.name;
@@ -328,7 +330,15 @@
             document.getElementById('address').href = `https://maps.google.com/?q=${profile.address}`;
             document.getElementById('website').textContent = profile.website;
             document.getElementById('website').href = `https://${profile.website}`;
+
+            if (phone.textContent == "") {
+                document.getElementById('phoneColumn').style.display = 'none';
+            }
+
         }
+
+
+
 
         function previousPerson() {
             if (currentIndex > 0) {
