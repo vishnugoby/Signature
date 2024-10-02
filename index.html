@@ -13,6 +13,14 @@
             font-family: Arial, sans-serif;
         }
 
+
+        .Gmailcontainer {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+
         .left {
             width: 300px;
             vertical-align: top;
@@ -145,6 +153,65 @@
     <br>
     <br>
     <hr>
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr class="Gmailcontainer">
+            <td class="">
+                <img id="profile-img" src="https://vishnugoby.github.io/Signature/images/logo.gif" alt="new logo"
+                    style="width: 300px; height: auto; border-radius: 5px;">
+            </td>
+            <td class="right">
+                <p id="gmailname" class="name">SUTHAHARAN Vishnugopy</p>
+                <p id="gmailjob" class="job">Concepteur et développeur d'application</p>
+                <br>
+                <table class="info">
+                    <tr id="gmailphoneColumn">
+                        <td style="padding-right: 10px;">
+                            <img src="https://vishnugoby.github.io/Signature/images/tel.png" alt="phone">
+                        </td>
+                        <td>
+                            <a id="gmailphone" href="tel:+33663376422">06 63 37 64 22</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            <img src="https://vishnugoby.github.io/Signature/images/email.png" alt="email">
+                        </td>
+                        <td>
+                            <a href="mailto:vishnu.rivasolutions@gmail.com"
+                                id="gmailemail">vishnu.rivasolutions@gmail.com</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            <img src="https://vishnugoby.github.io/Signature/images/loc.png" alt="location">
+                        </td>
+                        <td>
+                            <a id="gmailaddress"
+                                href="https://maps.app.goo.gl/Kkta3vTgMd921uRn8?g_st=com.google.maps.preview.copy">27 Bd
+                                Louise Michel, <br> </br>92230 Gennevilliers</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 10px;">
+                            <img src="https://vishnugoby.github.io/Signature/images/link.png" alt="website">
+                        </td>
+                        <td>
+                            <a id="gmailwebsite" href="https://rivasolutions.fr/">rivasolutions.fr</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
 
     <p>
         <strong>Tuto</strong><br>
@@ -358,12 +425,35 @@
         }
 
 
+        function updateProfileGmail(index) {
+            const profile = data[index];
+            document.getElementById('gmailname').textContent = profile.name;
+            document.getElementById('gmailjob').textContent = profile.job;
+            document.getElementById('gmailphone').textContent = profile.phone;
+            document.getElementById('gmailphone').href = profile.phoneLink;
+            document.getElementById('gmailemail').textContent = profile.email;
+            document.getElementById('gmailemail').href = `mailto:${profile.email}`;
+            document.getElementById('gmailaddress').textContent = profile.address;
+            document.getElementById('gmailaddress').href = `https://maps.google.com/?q=${profile.address}`;
+            document.getElementById('gmailwebsite').textContent = profile.website;
+            document.getElementById('gmailwebsite').href = `https://${profile.website}`;
+
+            if (phone.textContent == "") {
+                document.getElementById('phoneColumn').style.display = 'none';
+            } else {
+                document.getElementById('phoneColumn').style.display = 'table-row';
+            }
+
+        }
+
+
 
 
         function previousPerson() {
             if (currentIndex > 0) {
                 currentIndex--;
                 updateProfile(currentIndex);
+                updateProfileGmail(currentIndex);
             }
         }
 
@@ -371,6 +461,7 @@
             if (currentIndex < data.length - 1) {
                 currentIndex++;
                 updateProfile(currentIndex);
+                updateProfileGmail(currentIndex);
             }
         }
 
@@ -383,6 +474,7 @@
             li.onclick = () => {
                 currentIndex = index;
                 updateProfile(currentIndex);
+                updateProfileGmail(currentIndex);
             };
             usersName.appendChild(li);
         });
