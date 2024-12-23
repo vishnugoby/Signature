@@ -1,246 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signature</title>
+    <title>Signature Riva Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'riva-blue': '#6CD2EA'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        .container {
-            border: none;
-            width: 100%;
-            max-width: 600px;
+        .signature-container {
             font-family: Arial, sans-serif;
         }
-
-
-        .Gmailcontainer {
-            display: flex;
-            flex-direction: column;
-            font-family: Arial, sans-serif;
-        }
-
-
-        .left {
-            width: 300px;
-            vertical-align: top;
+        .signature-border {
             border-right: 2px solid #6CD2EA;
-        }
-
-        .right {
-            padding-left: 20px;
-            vertical-align: top;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        .info img {
-            width: 20px;
-            height: 20px;
-        }
-
-        .info p,
-        .info a {
-            margin: 0;
-            color: #666;
-            font-size: 14px;
-            font-family: Arial;
-            text-decoration: none;
-        }
-
-        .name {
-            margin: 0;
-            font-size: 16px;
-            color: #333;
-            font-weight: 700;
-            color: #6CD2EA;
-        }
-
-        .job {
-            margin: 0;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .buttons {
-            margin-top: 20px;
-        }
-
-        .buttons button {
-            padding: 10px 20px;
-            font-size: 14px;
-            margin-right: 10px;
-            cursor: pointer;
-            background-color: #6CD2EA;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .buttons button:hover {
-            background-color: #5BB7D9;
-        }
-
-        ul {
-            padding: 10px;
-        }
-
-        ul li {
-            cursor: pointer;
-            margin-bottom: 5px;
-        }
-
-        ul li:hover {
-            color: #6CD2EA;
         }
     </style>
 </head>
-
-<body>
-    <br>
-    <br>
-    <table class="container">
-        <tr>
-            <td class="left">
-                <img id="profile-img" src="https://vishnugoby.github.io/Signature/images/logo.gif" alt="new logo"
-                    style="width: 300px; height: auto; border-radius: 5px;">
-            </td>
-            <td class="right">
-                <p id="name" class="name">SUTHAHARAN Vishnugopy</p>
-                <p id="job" class="job">Concepteur et développeur d'application</p>
-                <br>
-                <table class="info">
-                    <tr id="phoneColumn">
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/tel.png" alt="phone">
-                        </td>
-                        <td>
-                            <a id="phone" href="tel:+33663376422">06 63 37 64 22</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/email.png" alt="email">
-                        </td>
-                        <td>
-                            <a href="mailto:vishnu.rivasolutions@gmail.com"
-                                id="email">vishnu.rivasolutions@gmail.com</a>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/loc.png" alt="location">
-                        </td>
-                        <td>
-                            <a id="address"
-                                href="https://maps.app.goo.gl/Kkta3vTgMd921uRn8?g_st=com.google.maps.preview.copy">27 Bd
-                                Louise Michel, <br> </br>92230 Gennevilliers</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/link.png" alt="website">
-                        </td>
-                        <td>
-                            <a id="website" href="https://rivasolutions.fr/">rivasolutions.fr</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
-    <br>
-    <table>
-        <tr class="Gmailcontainer">
-            <td class="">
-                <img id="profile-img" src="https://vishnugoby.github.io/Signature/images/logo.gif" alt="new logo"
-                    style="width: 300px; height: auto; border-radius: 5px;">
-            </td>
-            <td class="right">
-                <p id="gmailname" class="name">SUTHAHARAN Vishnugopy</p>
-                <p id="gmailjob" class="job">Concepteur et développeur d'application</p>
-                <br>
-                <table class="info">
-                    <tr id="gmailphoneColumn">
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/tel.png" alt="phone">
-                        </td>
-                        <td>
-                            <a id="gmailphone" href="tel:+33663376422">06 63 37 64 22</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/email.png" alt="email">
-                        </td>
-                        <td>
-                            <a href="mailto:vishnu.rivasolutions@gmail.com"
-                                id="gmailemail">vishnu.rivasolutions@gmail.com</a>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/loc.png" alt="location">
-                        </td>
-                        <td>
-                            <a id="gmailaddress"
-                                href="https://maps.app.goo.gl/Kkta3vTgMd921uRn8?g_st=com.google.maps.preview.copy">27 Bd
-                                Louise Michel, <br> </br>92230 Gennevilliers</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 10px;">
-                            <img src="https://vishnugoby.github.io/Signature/images/link.png" alt="website">
-                        </td>
-                        <td>
-                            <a id="gmailwebsite" href="https://rivasolutions.fr/">rivasolutions.fr</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <br> <br>
-    <br>
-    <br>
-
-    <p>
-        <strong>Tuto</strong><br>
-        <span>
-            Pour copier la signature, ouvrez cette page uniquement sur Chrome, sélectionnez tout le contenu de la
-            signature et collez-le dans Outlook.
-        </span>
-    </p>
-
-    <ul id="usersName">
-
-    </ul>
-
-    <div class="buttons">
-        <button onclick="previousPerson()">Previous</button>
-        <button onclick="nextPerson()">Next</button>
+<body class="bg-gray-100 p-4">
+    <!-- Première Signature -->
+    <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6 mb-6">
+        <table class="w-full signature-container">
+            <tr>
+                <td class="w-1/3 pr-4 signature-border">
+                    <img id="profile-img-1" 
+                         src="https://vishnugoby.github.io/Signature/images/logo.gif"
+                         alt="Logo" 
+                         class="w-[230px] h-auto rounded-[50px]"
+                    >
+                </td>
+                <td class="pl-4">
+                    <p id="name-1" class="text-lg font-bold text-riva-blue mb-2">SAFI Riad</p>
+                    <p id="job-1" class="text-sm text-gray-600 mb-2">Concepteur et développeur d'application</p>
+                    
+                    <div class="space-y-1">
+                        <div class="flex items-center">
+                            <img src="https://vishnugoby.github.io/Signature/images/tel.png" class="w-5 h-5 mr-2">
+                            <a id="phone-1" href="tel:+33662968161" class="text-gray-700 hover:text-riva-blue">06 62 96 81 61</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://vishnugoby.github.io/Signature/images/email.png" class="w-5 h-5 mr-2">
+                            <a id="email-1" href="mailto:riad.rivasolutions@gmail.com" class="text-gray-700 hover:text-riva-blue">riad.rivasolutions@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://vishnugoby.github.io/Signature/images/loc.png" class="w-5 h-5 mr-2">
+                            <a id="address-1" href="https://maps.app.goo.gl/Kkta3vTgMd921uRn8" class="text-gray-700 hover:text-riva-blue">
+                                27 Bd Louise Michel, 92230 Gennevilliers
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="https://vishnugoby.github.io/Signature/images/link.png" class="w-5 h-5 mr-2">
+                            <a id="website-1" href="https://rivasolutions.fr" class="text-gray-700 hover:text-riva-blue">rivasolutions.fr</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
+    <!-- Deuxième Signature (Style Gmail) -->
+    <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <div class="flex flex-col">
+            <img id="profile-img-2" 
+                 src="https://vishnugoby.github.io/Signature/images/logo.gif" 
+                 alt="Logo" 
+                 class="w-[230px] h-auto rounded-[5px] mb-4"
+            >
+            <div>
+                <p id="name-2" class="text-lg font-bold text-riva-blue mb-2">SAFI Riad</p>
+                <p id="job-2" class="text-sm text-gray-600 mb-2">Concepteur et développeur d'application</p>
+                
+                <div class="space-y-1">
+                    <div class="flex items-center">
+                        <img src="https://vishnugoby.github.io/Signature/images/tel.png" class="w-5 h-5 mr-2">
+                        <a id="phone-2" href="tel:+33662968161" class="text-gray-700 hover:text-riva-blue">06 62 96 81 61</a>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://vishnugoby.github.io/Signature/images/email.png" class="w-5 h-5 mr-2">
+                        <a id="email-2" href="mailto:riad.rivasolutions@gmail.com" class="text-gray-700 hover:text-riva-blue">riad.rivasolutions@gmail.com</a>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://vishnugoby.github.io/Signature/images/loc.png" class="w-5 h-5 mr-2">
+                        <a id="address-2" href="https://maps.app.goo.gl/Kkta3vTgMd921uRn8" class="text-gray-700 hover:text-riva-blue">
+                            27 Bd Louise Michel, 92230 Gennevilliers
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://vishnugoby.github.io/Signature/images/link.png" class="w-5 h-5 mr-2">
+                        <a id="website-2" href="https://rivasolutions.fr" class="text-gray-700 hover:text-riva-blue">rivasolutions.fr</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation et Liste des Utilisateurs -->
+    <div class="max-w-2xl mx-auto mt-6">
+        <ul id="usersName" class="grid grid-cols-3 gap-2">
+        </ul>
+
+        <div class="flex justify-center space-x-4 mt-4">
+            <button onclick="previousPerson()" class="px-4 py-2 bg-riva-blue text-white rounded hover:bg-opacity-80">
+                Précédent
+            </button>
+            <button onclick="nextPerson()" class="px-4 py-2 bg-riva-blue text-white rounded hover:bg-opacity-80">
+                Suivant
+            </button>
+        </div>
+    </div>
 
     <script>
         const data = [
             {
-                name: "SUTHAHARAN Vishnugopy",
+                name: "SAFI Riad",
                 job: "Concepteur et développeur d'application",
-                phone: "06 63 37 64 22",
-                email: "vishnu.rivasolutions@gmail.com",
+                phone: "06 62 96 81 61",
+                email: "riad.rivasolutions@gmail.com",
                 address: "27 Bd Louise Michel, 92230 Gennevilliers",
                 website: "rivasolutions.fr",
-                phoneLink: "tel:+33663376422",
+                phoneLink: "tel:+33662968161",
             },
             {
                 name: "LATAYA Sebastien",
@@ -411,73 +297,40 @@
                 website: "riva-group.fr",
                 phoneLink: "tel:+33676912683",
             },
-
-            {
-                name: "SAFI Riad",
-                job: "Concepteur et développeur d'application",
-                phone: "06 62 96 81 61",
-                email: "riad.rivasolutions@gmail.com",
-                address: "27 Bd Louise Michel, 92230 Gennevilliers",
-                website: "riva-group.fr",
-                phoneLink: "tel:+33662968161",
-            },
         ];
 
         let currentIndex = 0;
 
-
-
         function updateProfile(index) {
             const profile = data[index];
-            document.getElementById('name').textContent = profile.name;
-            document.getElementById('job').textContent = profile.job;
-            document.getElementById('phone').textContent = profile.phone;
-            document.getElementById('phone').href = profile.phoneLink;
-            document.getElementById('email').textContent = profile.email;
-            document.getElementById('email').href = `mailto:${profile.email}`;
-            document.getElementById('address').textContent = profile.address;
-            document.getElementById('address').href = `https://maps.google.com/?q=${profile.address}`;
-            document.getElementById('website').textContent = profile.website;
-            document.getElementById('website').href = `https://${profile.website}`;
+            
+            // Mise à jour de la première signature
+            document.getElementById('name-1').textContent = profile.name;
+            document.getElementById('job-1').textContent = profile.job;
+            document.getElementById('phone-1').textContent = profile.phone;
+            document.getElementById('phone-1').href = profile.phoneLink;
+            document.getElementById('email-1').textContent = profile.email;
+            document.getElementById('email-1').href = `mailto:${profile.email}`;
+            document.getElementById('address-1').textContent = profile.address;
+            document.getElementById('website-1').textContent = profile.website;
+            document.getElementById('website-1').href = `https://${profile.website}`;
 
-            if (phone.textContent == "") {
-                document.getElementById('phoneColumn').style.display = 'none';
-            } else {
-                document.getElementById('phoneColumn').style.display = 'table-row';
-            }
-
+            // Mise à jour de la signature Gmail
+            document.getElementById('name-2').textContent = profile.name;
+            document.getElementById('job-2').textContent = profile.job;
+            document.getElementById('phone-2').textContent = profile.phone;
+            document.getElementById('phone-2').href = profile.phoneLink;
+            document.getElementById('email-2').textContent = profile.email;
+            document.getElementById('email-2').href = `mailto:${profile.email}`;
+            document.getElementById('address-2').textContent = profile.address;
+            document.getElementById('website-2').textContent = profile.website;
+            document.getElementById('website-2').href = `https://${profile.website}`;
         }
-
-
-        function updateProfileGmail(index) {
-            const profile = data[index];
-            document.getElementById('gmailname').textContent = profile.name;
-            document.getElementById('gmailjob').textContent = profile.job;
-            document.getElementById('gmailphone').textContent = profile.phone;
-            document.getElementById('gmailphone').href = profile.phoneLink;
-            document.getElementById('gmailemail').textContent = profile.email;
-            document.getElementById('gmailemail').href = `mailto:${profile.email}`;
-            document.getElementById('gmailaddress').textContent = profile.address;
-            document.getElementById('gmailaddress').href = `https://maps.google.com/?q=${profile.address}`;
-            document.getElementById('gmailwebsite').textContent = profile.website;
-            document.getElementById('gmailwebsite').href = `https://${profile.website}`;
-
-            if (phone.textContent == "") {
-                document.getElementById('phoneColumn').style.display = 'none';
-            } else {
-                document.getElementById('phoneColumn').style.display = 'table-row';
-            }
-
-        }
-
-
-
 
         function previousPerson() {
             if (currentIndex > 0) {
                 currentIndex--;
                 updateProfile(currentIndex);
-                updateProfileGmail(currentIndex);
             }
         }
 
@@ -485,27 +338,36 @@
             if (currentIndex < data.length - 1) {
                 currentIndex++;
                 updateProfile(currentIndex);
-                updateProfileGmail(currentIndex);
             }
         }
 
-        // Display all the names
-        const usersName = document.getElementById('usersName');
-        data.forEach((profile, index) => {
-            const li = document.createElement('li');
-            li.textContent = profile.name;
-            li.style.cursor = 'pointer';
-            li.onclick = () => {
-                currentIndex = index;
-                updateProfile(currentIndex);
-                updateProfileGmail(currentIndex);
-            };
-            usersName.appendChild(li);
-        });
 
-        // Initialize with the first profile
-        updateProfile(currentIndex);
-    </script>
+    // Remplacez la section d'affichage de la liste par :
+    const usersName = document.getElementById('usersName');
+    data.forEach((profile, index) => {
+        const button = document.createElement('button');
+        button.textContent = profile.name;
+        button.classList.add(
+            'px-4', 
+            'py-2', 
+            'bg-white', 
+            'text-gray-700', 
+            'border', 
+            'border-gray-300', 
+            'rounded-lg', 
+            'hover:bg-riva-blue', 
+            'hover:text-white', 
+            'transition', 
+            'duration-300', 
+            'ease-in-out',
+            'shadow-sm'
+        );
+        button.onclick = () => {
+            currentIndex = index;
+            updateProfile(currentIndex);
+        };
+        usersName.appendChild(button);
+    });
+</script>
 </body>
-
 </html>
